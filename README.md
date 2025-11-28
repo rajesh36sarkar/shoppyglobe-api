@@ -3,6 +3,8 @@
 
 Backend API for ShoppyGlobe built with Node.js, Express, MongoDB and JWT authentication.
 
+git repo - https://github.com/rajesh36sarkar/shoppyglobe-api
+
 ## Features
 - Products endpoints:
   - GET /api/products
