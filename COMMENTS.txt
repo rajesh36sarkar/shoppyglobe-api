@@ -1,0 +1,17 @@
+
+This package contains:
+- Complete Express app with JWT auth (routes under /api)
+- Model files: Product, CartItem, User (Mongoose)
+- Validation using express-validator
+- Seed script to populate sample products and test user
+- thunder_collection.json for ThunderClient/Postman import
+
+How to get screenshots for MongoDB:
+1. Start MongoDB and run `npm run seed`.
+2. Open MongoDB Compass or Atlas UI and navigate to `shoppyglobe` DB.
+3. Open `products` collection, take a screenshot.
+4. Add items to cart via API, then open `cartitems` collection and take a screenshot.
+
+If you'd like, I can:
+- Add extra routes (update product, delete product) and admin protection.
+- Provide a ready-made set of ThunderClient screenshots (I cannot access your DB to take screenshots).

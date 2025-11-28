@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "ShoppyGlobe API - ThunderClient",
+    "_postman_id": "shoppyglobe-sample",
+    "description": "Sample requests for testing ShoppyGlobe API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \"name\": \"Test User\",\\n  \"email\": \"test2@example.com\",\\n  \"password\": \"password123\"\\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \"email\": \"test@example.com\",\\n  \"password\": \"password123\"\\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/products",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add to Cart (example)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer <TOKEN>",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \"productId\": \"<PRODUCT_ID>\",\\n  \"quantity\": 1\\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/cart",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "api",
+            "cart"
+          ]
+        }
+      }
+    }
+  ]
+}
