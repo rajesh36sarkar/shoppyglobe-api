@@ -1,12 +1,11 @@
-
 {
   "name": "shoppyglobe-api",
   "version": "1.0.0",
   "description": "Backend API for ShoppyGlobe - Node.js, Express, MongoDB, JWT",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "seed": "node seed.js"
   },
   "dependencies": {
@@ -19,5 +18,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "type": "module",
+  "author": "rajesh sarkar"
 }

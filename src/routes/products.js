@@ -1,8 +1,8 @@
 
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const Product = require('../models/Product');
-const { body, param, validationResult } = require('express-validator');
+import Product from '../models/Product.js';
+import { body, param, validationResult } from 'express-validator';
 
 // GET /api/products - list products (with optional ?q & ?limit)
 router.get('/', async (req, res, next) => {
@@ -29,4 +29,4 @@ router.get('/:id', param('id').isMongoId(), async (req, res, next) => {
   }
 });
 
-module.exports = router;
+export default router;

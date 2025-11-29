@@ -1,10 +1,10 @@
 
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const { body, param, validationResult } = require('express-validator');
-const auth = require('../middleware/auth');
-const CartItem = require('../models/CartItem');
-const Product = require('../models/Product');
+import { body, param, validationResult } from 'express-validator';
+import auth from '../middleware/auth.js';
+import CartItem from '../models/CartItem.js';
+import Product from '../models/Product.js';
 
 // Protect all cart routes
 router.use(auth);
@@ -94,4 +94,4 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-module.exports = router;
+export default router;
