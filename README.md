@@ -3,6 +3,8 @@
 
 A clean, modern, fully ESM backend for the ShoppyGlobe e-commerce app.
 
+git repo - https://github.com/rajesh36sarkar/shoppyglobe-api
+
 ## Features
 - Products API (CRUD)
 - Cart API (Add/Update/Delete)
